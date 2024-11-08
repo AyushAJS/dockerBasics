@@ -1,0 +1,19 @@
+{
+  "name": "basic_node_server",
+  "version": "1.0.0",
+  "description": "this is an basic node server which is created inside container using docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "ayush jangid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
