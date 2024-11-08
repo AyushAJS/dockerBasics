@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv");
+dotenv.config();
 
 app.use("/",(req,res)=>{
     res.json({
@@ -7,9 +9,18 @@ app.use("/",(req,res)=>{
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("Server is running on port 3000");
 })
+
+
+
+
+
+
+
+
+
 
 
 
